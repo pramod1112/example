@@ -1,0 +1,14 @@
+<app-shopping-edit></app-shopping-edit>
+<!-- <app-shopping-edit (sendNewIngred)="catchNewIngred($event)"></app-shopping-edit> -->
+<hr>
+<ul class="list-group">
+    <li class="list-group-item my-group-item" *ngFor="let ingred of ingredientList">
+        <div>
+            <h4>{{ingred.name}} <span class="fs-20">({{ingred.brand}})</span></h4>
+            
+        </div>
+        <div>
+            <h3>{{ingred.quantity}}</h3>
+        </div>
+    </li>
+</ul>

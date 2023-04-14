@@ -1,0 +1,17 @@
+<p>recipe works!</p>
+<div class="row">
+    <div class="col-sm-6">
+        <app-recipe-list></app-recipe-list>
+        <!-- <app-recipe-list (listEventHandler)="currentSeletedRecipe = $event"></app-recipe-list> -->
+    </div>
+    <div class="col-sm-6">
+        <app-recipe-details [recDataFromParent]="currentSeletedRecipe" *ngIf="currentSeletedRecipe; else elsePart" ></app-recipe-details>
+        <ng-template #elsePart>
+            <h3>
+                <i class="fa fa-hand-o-left fs-46" aria-hidden="true"></i>
+                <!-- <span class="fs-46">&#9754;</span> -->
+                Please select a recipe to view it's details
+            </h3>
+        </ng-template>
+    </div>
+</div>

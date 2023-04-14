@@ -1,0 +1,9 @@
+.my-group-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fs-20{
+    font-size: 16px;
+    color: #b1a5a5
+}

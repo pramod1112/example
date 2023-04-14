@@ -1,0 +1,26 @@
+.my-list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666666;
+    text-decoration: none;
+}
+
+.my-list-item > div:first-child{
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+    padding: 0 15px 0 0;
+}
+
+.my-list-item > div:last-child{
+    flex: 2;
+}
+
+.my-list-item > div > span:first-child{
+    font-size: 22px;
+}
+
+.my-list-item > div > span:last-child{
+    font-size: 12px;
+}

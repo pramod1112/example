@@ -1,0 +1,15 @@
+<!-- <img src="https://thumbs.dreamstime.com/b/chana-poha-chickpea-pohe-protein-rich-breakfast-recipe-india-power-kabuli-choley-popular-maharashtrian-indian-190243755.jpg" alt=""> -->
+
+<div class="list-group" >
+    <app-recipe-item [recData]="recipe" *ngFor="let recipe of recipeList"></app-recipe-item>
+    <!-- <app-recipe-item [recData]="recipe" *ngFor="let recipe of recipeList" (itemClickHandler)="catchedItemEvent(recipe)"></app-recipe-item> -->
+    <!-- <a href="" class="list-group-item my-list-item" *ngFor="let rec of recipeList">
+        <div>
+            <span>{{rec.name}}</span>
+            <span>{{rec.description}}</span>
+        </div>
+        <div>
+            <img src="{{rec.photo}}" alt="" class="w-100">
+        </div>
+    </a> -->
+</div>
